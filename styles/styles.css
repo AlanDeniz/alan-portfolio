@@ -1,6 +1,116 @@
 @charset "utf-8";
 /* Main portfolio styles */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+*{box-sizing: border-box;
+}
 body{
 	font-family:'Roboto', sans-serif;
+	margin: 0;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container { 
+width: 95%;
+margin: 0 auto;}
+
+.title {
+	font-size: 2.5rem;
+}
+
+.title span {
+	font-weight: 300;
+	display: block;
+	font-size: 1.8rem;
+}
+
+@media (min-width:60rem){
+	.title {
+		font-size: 3.5rem
+	}
+}
+/* buttons */
+.button {
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: 0.5em 1.75em;
+	display: inline-block;
+	color: antiquewhite;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    outline: none;}
+.button:hover,
+.button:focus{
+	background: #AB9A9A;
+	color: white;
+	background-color: transparent 50px;
+	
+	
+	
+}
+
+/* header */
+
+header {
+margin: 1em;
+position: absolute;
+left: 0;
+right: 0;}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+
+nav li {
+	display: inline-block;
+	margin: 1em;
+}
+
+nav a {
+	font-weight: 900;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	padding: 0.5em;
+	color: antiquewhite;
+}
+
+nav a:hover,
+nav a:focus {
+	color: gray;
+}
+
+@media (min-width:60rem){
+	.logo {
+		float: left;
+	}
+	nav {float: right;}
+}
+/* home-front */
+
+.home-front{
+	background-image: url(../images/home-front-bg.jpg);
+	background-size:cover;
+	background-position: center;
+	padding: 5em 0;
+	color: antiquewhite;
+}
+
+@media (min-width: 60rem){
+	.home-front{
+	height: 100vh;
+	padding-top:35vh; }
+	
 }

@@ -1,29 +1,50 @@
 @charset "utf-8";
 /* Main portfolio styles */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-*{box-sizing: border-box;
+* {
+	box-sizing: border-box;
+	transition: all ease-in-out 250ms;
 }
-body{
-	font-family:'Roboto', sans-serif;
+body {
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	text-align: center;
-	
+	background-image: url(../images/site-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #E1E1E1;
 }
-
 h1 {
 	font-weight: 300;
 	font-size: 2rem;
 }
-
 img {
 	max-width: 100%;
 	height: auto;
 }
+.container {
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
+}
+.clearfix::after, section::after, footer::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+/*Footer styling */ 
 
-.container { 
-width: 95%;
-max-width: 70em;
-margin: 0 auto;}
+[class^=footer-] {
+	float: left;
+	padding: 0 0.25em;
+}
+.footer-3 {
+	width: 50%;
+}
+.footer-1 {
+	width: 16%;
+}
+/* Titles */
 
 .title {
 	font-size: 2.5rem;
@@ -31,17 +52,24 @@ margin: 0 auto;}
 	margin-top: 1em;
 	font-weight: 900;
 }
-
 .title span {
 	font-weight: 300;
 	display: block;
 	font-size: 1.8rem;
 }
+.title-action {
+	margin: 0 0 0.50em;
+}
+.unstyled-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
 
-@media (min-width:60rem){
-	.title {
-		font-size: 3.5rem
-	}
+@media (min-width:60rem) {
+.title {
+	font-size: 3.5rem
+}
 }
 /* buttons */
 .button {
@@ -53,42 +81,63 @@ margin: 0 auto;}
 	padding: 0.5em 1.75em;
 	display: inline-block;
 	color: white;
-    background-color: transparent;
-    cursor: pointer;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    outline: none;}
-.button:hover,
-.button:focus{
+	background-color: transparent;
+	cursor: pointer;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	outline: none;
+}
+.button:hover, .button:focus {
 	background: #AB9A9A;
 	color: white;
 	background-color: transparent 50px;
-	
-	
-	
-	
 }
 
+@media (min-width: 60rem) {
+.button {
+	font-size: 1.5rem;
+}
+}
+.button-small {
+	font-size: 1rem;
+	font-weight: 700;
+}
+.button-accent {
+	color: white;
+	border-color: white;
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: 0.5em 1.75em;
+	display: inline-block;
+}
+.button-accent:hover, .button-accent:focus {
+	background: #AB9A9A;
+	color: white;
+}
+.button-action:hover, .button-accent:focus {
+	background: black;
+	border-color: black;
+}
 /* header */
 
 header {
-margin: 1em;
-position: absolute;
-left: 0;
-right: 0;}
-
+	margin: 1em;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
 nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	
 }
-
 nav li {
 	display: inline-block;
 	margin: 1em;
 }
-
 nav a {
 	font-weight: 900;
 	text-decoration: none;
@@ -97,47 +146,44 @@ nav a {
 	padding: 0.5em;
 	color: white;
 }
-
-nav a:hover,
-nav a:focus {
+nav a:hover, nav a:focus {
 	color: gray;
 }
 
-@media (min-width:60rem){
-	.logo {
-		float: left;
-	}
-	nav {float: right;}
+@media (min-width:60rem) {
+.logo {
+	float: left;
 }
-/* home-front */
+nav {
+	float: right;
+}
+}
+/* homepage section */
 
-.home-front{
+.home-front {
 	background-image: url(../images/home-front-bg.jpg);
-	background-size:cover;
+	background-size: cover;
 	background-position: center;
 	padding: 5em 0;
 	color: white;
-	
 }
 
-@media (min-width: 60rem){
-	.home-front{
+@media (min-width: 60rem) {
+.home-front {
 	height: 100vh;
-	padding-top:35vh; }
-	
+	padding-top: 35vh;
 }
-
-.home-about-textbox{
- background-color: #232323;
- padding: 4em;
- width: 100vw;
- margin-left: -2.5%;
- outline: 2px solid white;
- outline-offset: -2.5em;
- color: white;
- position: relative;
 }
-
+.home-about-textbox {
+	background-color: #232323;
+	padding: 4em;
+	width: 100vw;
+	margin-left: -2.5%;
+	outline: 2px solid white;
+	outline-offset: -2.5em;
+	color: white;
+	position: relative;
+}
 .home-about-textbox h1 {
 	position: absolute;
 	top: 0.001em;
@@ -145,30 +191,82 @@ nav a:focus {
 	padding: 0 0.1em;
 	left: 50%;
 	transform: translateX(-50%)
-	
-	
-}
-@media(min-width: 25rem){
-	h1{
-		font-size: 1.3rem;
-	}
-	.home-about-textbox h1 {
-		top: 0.2em;
-		padding: 0.35em;
-		
-	}
 }
 
-.home-about{
+@media(min-width: 25rem) {
+h1 {
+	font-size: 1.3rem;
+}
+.home-about-textbox h1 {
+	top: 0.2em;
+	padding: 0.35em;
+}
+}
+.home-about {
 	background-image: url(../images/background-foto2.jpg);
-padding-bottom: 20em;
+	padding-bottom: 20em;
 	background-repeat: no-repeat;
 	left: 50%;
-  }
+}
+.home-about-textbox {
+	width: 50%;
+	margin-left: -2.5%;
+}
+/* My work section */
+.work {
+	margin: 3em 0 0;
+}
+.work h1 {
+	font-size: 250%;
+}
+.port-work {
+	position: relative;
+	margin: 0;
+}
+.port-work img {
+	display: inline-flex;
+}
+.work-desc {
+	position: absolute;
+	z-index: 100;
+	bottom: 1em;
+	left: 15em;
+	right: 15em;
+	color: white;
+	background: rgba(0,0,0,0.75);
+	padding-bottom: 2em;
+}
+.work-desc p {
+	margin: 1em;
+}
 
-.home-about-textbox{
- 
- width: 50%;
- margin-left: -2.5%;
+@media(min-width: 37rem) {
+.port-work {
+	width: 50%;
+	float: left;
+	object-fit: cover;
+	overflow: hidden;
+}
+.work-desc {
+	transform: translateY(150%);
+}
+.port-work:hover .work-desc {
+	transform: translateY(0%);
+}
+}
+/*Contact section*/
 
+.action {
+	background-color: coral;
+	font-size: 16;
+	color: black;
+	padding: 5em 0;
+}
+/*Footer*/
+
+footer {
+	background: #232323;
+	color: white;
+	text-align: left;
+	padding: 5em 0;
 }

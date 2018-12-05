@@ -5,14 +5,23 @@
 <meta name="viewport" content="width=device-width, initial scale=1">
 <title>Home</title>
 <link href="styles/styles.css" rel="stylesheet" type="text/css">
+<!-- loading jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
 <header><img src="images/logo.png" class="logo" alt="home">
   <nav>
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li class="active"><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+	  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Projects</a>
+		  <div class="dropdown-content">
+      <a href="#">Flow 1</a>
+      <a href="#">Flow 2</a>
+      <a href="#">Flow 3</a>
+	  <a href="#">Flow 4</a>
+    </div></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -21,7 +30,7 @@
   <div class="container">
     <p> </p>
     <h1 class="title">Creating great designs <span>for great companies</span> </h1>
-    <a href="#work" class="button">My Designs</a> </div>
+    <a href="#projects" class="button">My Designs</a> </div>
 </section>
 <div class="container">
   <section class="home-about">
@@ -29,9 +38,9 @@
       <h1 id="about">Who is AlanDenz?</h1>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nihil temporibus eos incidunt hic suscipit atque quidem aliquam minima quae sequi vitae, dolorem optio asperiores vel laudantium, possimus magni odio!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nihil temporibus eos incidunt hic suscipit atque quidem aliquam minima quae sequi vitae, dolorem optio asperiores vel laudantium, possimus magni odio! </p>
     </div>
-  </section>
+   <img class="image" src="images/me.png" alt="me"/> </section>
 </div>
-<section id="work" class="work">
+<section id="projects" class="work">
   <h1>My latest work</h1>
   
   <!--work 1-->

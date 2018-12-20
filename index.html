@@ -19,7 +19,7 @@
 			$(window).scrollTo(this.hash, 750) });	
 		
 	
-	$(".button").click(function() {
+	$("").click(function() {
   		window.location = $(this).find(".container3").attr("href"); 
   		return false;
 	});
@@ -31,31 +31,31 @@
 <header>
 	<nav> 
         <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="pages/about.html">About</a></li>
+      <li><a href="../alan-portfolio/index.html">Home</a></li>
+      <li><a href="../alan-portfolio/pages/about.html">About</a></li>
 	  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Portfolio</a>
 		  <div class="dropdown-content">
-      <a href="pages/flow-1.html">Flow 1</a>
-      <a href="pages/flow-2.html">Flow 2</a>
-      <a href="pages/flow-3.html">Flow 3</a>
-	  <a href="#">Flow 4</a>
-	 <a href="#">Flow 5: Exam</a>
+      <a href="../alan-portfolio/pages/flow-1.html">Flow 1</a>
+      <a href="../alan-portfolio/pages/flow-2.html">Flow 2</a>
+      <a href="../alan-portfolio/pages/flow-3.html">Flow 3</a>
+	  <a href="../alan-portfolio/pages/flow-4.html">Flow 4</a>
+	 <a href="../alan-portfolio/pages/flow-5.html">Flow 5: Exam</a>
     </div></li>
-      <li><a href="file:///C:/Users/Alan/Documents/Github/Root/alan-portfolio/pages/contacts.html">Contact</a></li>
+      <li><a href="../alan-portfolio/pages/contacts.html">Contact</a></li>
     </ul></nav>
   <div class="container2">
-    <img src="images/ad-designs2.png" class="logo" alt="logo"/></div>
+    <a href="../alan-portfolio/index.html"><img src="images/ad-designs.png" class="logo" alt="logo" /></a></div>
     
  </header>
 <section class="home-front">
   <div class="container">
     <p> </p>
     <h1 class="title">Creating great designs <span>for great companies</span> </h1>
-    <a href="" class="button">See my work</a> </div>
+    <a href="#projects" class="button">See my work</a> </div>
 </section>
 
 	
-<section class="container3">
+<section id="projects" class="container3">
   
   <!-- Slideshow container -->
   <div class="slideshow-container"> 
@@ -63,22 +63,22 @@
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
       <div class="numbertext">1 / 4</div>
-      <img src="images/xd.jpg" style="width:50%">
+      <a href="pages/flow-1.html"><img src="images/xd.jpg" style="width:50%"></a>
       <div class="text">Drøm din portfolio</div>
     </div>
     <div class="mySlides fade">
       <div class="numbertext">2 / 4</div>
-      <img src="../alan-portfolio/images/homepage.png" style="width:50%">
+      <a href="pages/flow-2.html"><img src="../alan-portfolio/images/homepage.png" style="width:50%"></a>
       <div class="text">Byg din portfolio</div>
     </div>
     <div class="mySlides fade">
       <div class="numbertext">3 / 4</div>
-      <img src="../alan-portfolio/images/handphone.png" style="width:50%">
+      <a href="pages/flow-3.html"><img src="../alan-portfolio/images/handphone.png" style="width:50%"></a>
       <div class="text">Byg din app</div>
     </div>
 	  <div class="mySlides fade">
       <div class="numbertext">4 / 4</div>
-      <img src="../alan-portfolio/images/hotbot.png" style="width:50%">
+      <a href="pages/flow-4.html"><img src="../alan-portfolio/images/hotbot.png" style="width:50%"></a>
       <div class="text">Sweetbot.design</div>
     </div>
     
@@ -117,12 +117,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-<section class="action">
-  <div class="container">
-    <p> </p>
-    <h1 id="contact" class="title title-action">Finding anything of your interest? <span>reach me here!</span> </h1>
-    <a href="" class="button button-action">Contact Me</a> </div>
-</section>
+
 <footer>
   <div class="container1">
     <div class="footer-3">

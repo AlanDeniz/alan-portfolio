@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
 	box-sizing: border-box;
-	transition: all ease-in-out 250ms;
+	transition: all ease-in-out 350ms;
 }
 body {
 	font-family: 'Roboto', sans-serif;

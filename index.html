@@ -7,6 +7,24 @@
 <link href="styles/styles.css" rel="stylesheet" type="text/css">
 <!-- loading jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- loading scroll to plugin-->
+<script src="scripts/jquery.scrollTo.min.js"></script>
+<script>	
+	$(document).ready(function(){
+		//bliver udført når dokumentet er læst ind!
+		
+		$('nav a').click(function(){
+			$(window).scrollTo(this.hash, 750) });	
+		$('div a').click(function(){
+			$(window).scrollTo(this.hash, 750) });	
+		
+	
+	$(".button").click(function() {
+  		window.location = $(this).find(".container3").attr("href"); 
+  		return false;
+	});
+	});
+</script>
 </head>
 
 <body>
@@ -21,7 +39,7 @@
       <a href="pages/flow-2.html">Flow 2</a>
       <a href="pages/flow-3.html">Flow 3</a>
 	  <a href="#">Flow 4</a>
-	  <a href="#">1st semester project</a>
+	 <a href="#">Flow 5: Exam</a>
     </div></li>
       <li><a href="file:///C:/Users/Alan/Documents/Github/Root/alan-portfolio/pages/contacts.html">Contact</a></li>
     </ul></nav>
@@ -33,29 +51,35 @@
   <div class="container">
     <p> </p>
     <h1 class="title">Creating great designs <span>for great companies</span> </h1>
-    <a href="#projects" class="button">See my work</a> </div>
+    <a href="" class="button">See my work</a> </div>
 </section>
 
-<section id="projects" class="work">
+	
+<section class="container3">
   
   <!-- Slideshow container -->
   <div class="slideshow-container"> 
     
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="" style="width:50%">
-      <div class="text">Caption Text</div>
+      <div class="numbertext">1 / 4</div>
+      <img src="images/xd.jpg" style="width:50%">
+      <div class="text">Drøm din portfolio</div>
     </div>
     <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="" style="width:50%">
-      <div class="text">Caption Two</div>
+      <div class="numbertext">2 / 4</div>
+      <img src="../alan-portfolio/images/homepage.png" style="width:50%">
+      <div class="text">Byg din portfolio</div>
     </div>
     <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="" style="width:50%">
-      <div class="text">Caption Three</div>
+      <div class="numbertext">3 / 4</div>
+      <img src="../alan-portfolio/images/handphone.png" style="width:50%">
+      <div class="text">Byg din app</div>
+    </div>
+	  <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="../alan-portfolio/images/hotbot.png" style="width:50%">
+      <div class="text">Sweetbot.design</div>
     </div>
     
     <!-- Next and previous buttons --> 
@@ -63,7 +87,7 @@
   <br>
   
   <!-- The dots/circles -->
-  <div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> </div>
+  <div style="text-align:center"> <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> <span class="dot" onclick="currentSlide(4)"></span> </div>
 </section>
 <script>
 var slideIndex = 1;
@@ -102,31 +126,7 @@ function showSlides(n) {
 <footer>
   <div class="container1">
     <div class="footer-3">
-      <p>suscipit atque quidem aliquam minima quae sequi vitae, dolorem optio asperiores vel laudantium, possimus magni odio!</p>
-    </div>
-    <div class="footer-1">
-      <ul class="unstyled-list">
-        <li><strong>aliquam</strong></li>
-        <li>dolorem</li>
-        <li>laudantium</li>
-        <li>magni odio</li>
-      </ul>
-    </div>
-    <div class="footer-1">
-      <ul class="unstyled-list">
-        <li><strong>aliquam</strong></li>
-        <li>dolorem</li>
-        <li>laudantium</li>
-        <li>magni odio</li>
-      </ul>
-    </div>
-    <div class="footer-1">
-      <ul class="unstyled-list">
-        <li><strong>aliquam</strong></li>
-        <li>dolorem</li>
-        <li>laudantium</li>
-        <li>magni odio</li>
-      </ul>
+      <p>&copy; AlanDenz All rights reserved</p>
     </div>
   </div>
 </footer>
